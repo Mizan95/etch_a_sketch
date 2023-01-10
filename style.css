@@ -1,3 +1,13 @@
-.box {
-  border: solid 1px blue;
+.grid {
+    width: 500px;
+    height: 500px;
+    border: solid blueviolet 1px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.grid > div {
+    background-color: darkgoldenrod;
+    flex: none;
 }

@@ -8,10 +8,11 @@
 
 
 ## Steps
-* Generate square grid via javascript
-  * generate expandable divs with size as per user input
-  * append divs on grid
-* Enable function and event listener for each square so it colours on hover
+
+make grid into display: grid with 50 rows and 50 columns
+generate 4 divs
+each div needs to fill 25 rows and 25 columns
+
 
 
 

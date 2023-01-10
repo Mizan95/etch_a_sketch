@@ -1,11 +1,12 @@
-let squareSize = 8;
+const grid = document.querySelector('.grid');
+let input = prompt("Enter a number");
+let number = parseInt(input);
 
-function createDiv(squareSize) {
-    const div = document.createElement("div");
-    div.classlist.add("box");
-    div.style.width = `${size}px`;
-    div.style.height = `${size}px`;
 
-    return div;
+for (let i = 1; i <= number * number; i++) {
+    const div = document.createElement('div');
+    div.style.height = `${grid.clientHeight / number}px`;
+    div.style.width = `${grid.clientWidth / number}px`;
+
+    grid.appendChild(div);
 }
-
