@@ -41,7 +41,7 @@ body > section:nth-of-type(1) {
 
 .box {
     flex: none;
-    border: solid 1px gray;
+    border: solid 3px gray;
     box-sizing: border-box;
 }
 
@@ -53,14 +53,14 @@ input[type="range"] {
     appearance: slider-vertical;
 }
 
-.clearButton {
+#clearButton {
     background-color: brown;
-    height: 3rem;
-    width: 3rem;
+    height: 5rem;
+    width: 5rem;
 }
 
-.colourButton {
+#colourButton {
     background-color: darkgreen;
-    height: 3rem;
-    width: 3rem;
+    height: 5rem;
+    width: 5rem;
 }
