@@ -2,16 +2,18 @@
 ## Result
 * Resizable 16 x 16 grid of squares
 * When mouse hovers over squares, it should leave a trail of colour
-* A button shuld be present
-  * Once clicked, a popup is displayed taking number
-* New grid should be generated with number of squares per side is equal to number inputted by user
+* A slider should be present
+  * Generated square grid should have sides equal to output of slider
+* Apply button present. When clicked, applies the output of slider to grid.
+* Clear button present. When clicked, trail of colour should be erased.
+* Colour button present. When clicked, it should show a colour picker.
+* When user clicks colour on colour picker, the trail of colour should match that colour.
+
+## Next Step
+* Configure Clear button.
 
 
-## Steps
 
-make grid into display: grid with 50 rows and 50 columns
-generate 4 divs
-each div needs to fill 25 rows and 25 columns
 
 
 
