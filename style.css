@@ -3,37 +3,84 @@
 body {
     padding: 0;
     margin: 0;
+    background-color: #66ff66;
 }
 
 header {
     width: 100%;
-    height: 10rem;
+    height: 5rem;
     background-color: rgb(255, 255, 255);
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0.5rem;
 }
 
 .title-container {
     font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     font-size: 48px;
     color: rgb(27, 37, 180);
     text-shadow: 4px 4px 4px #aaa;
 }
 
-body > section:nth-of-type(1) {
+body > section {
     display: flex;
     justify-content: center;
 }
 
+
+/* Buttons */
+
+.buttonContainer {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#clearButton {
+    background-color: #104df7;
+    color: aliceblue;
+    height: 5rem;
+    width: 8rem;
+    border: solid 1px #104df7;
+    box-shadow: 2px 2px 2px blueviolet;
+    border-radius: 5px;
+    margin: auto;
+    font-size: 1.5em;
+}
+
+#applyButton {
+    background-color: #104df7;
+    color: aliceblue;
+    height: 5rem;
+    width: 8rem;
+    border: solid 1px #104df7;
+    box-shadow: 2px 2px 2px blueviolet;
+    height: 5rem;
+    width: 8rem;
+    border-radius: 5px;
+    margin: auto;
+    font-size: 1.5em;
+}
+
+#colourPickerLabel {
+    margin-top: 0.5rem;
+}
+
+
+/* Grid */
+
 .gridContainer {
     display: flex;
+    margin-right: 8rem;
 }
 
 #grid {
-    width: 500px;
-    height: 500px;
+    width: 32rem;
+    height: 32rem;
     border: solid blueviolet 1px;
     display: flex;
     flex-wrap: wrap;
@@ -45,10 +92,6 @@ body > section:nth-of-type(1) {
     box-sizing: border-box;
 }
 
-.shaded {
-    background-color: gold;
-}
-
 .slideContainer {
     margin: auto;
 }
@@ -57,8 +100,10 @@ input[type="range"] {
     appearance: slider-vertical;
 }
 
-#clearButton {
-    background-color: brown;
+
+footer {
+    width: 100%;
     height: 5rem;
-    width: 5rem;
+    background-color: rgb(255, 255, 255);
+    margin-top: 0.5rem;
 }
