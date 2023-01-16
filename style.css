@@ -31,7 +31,7 @@ body > section:nth-of-type(1) {
     display: flex;
 }
 
-.grid {
+#grid {
     width: 500px;
     height: 500px;
     border: solid blueviolet 1px;
@@ -49,8 +49,6 @@ body > section:nth-of-type(1) {
     background-color: gold;
 }
 
-
-
 .slideContainer {
     margin: auto;
 }
@@ -61,12 +59,6 @@ input[type="range"] {
 
 #clearButton {
     background-color: brown;
-    height: 5rem;
-    width: 5rem;
-}
-
-#colourButton {
-    background-color: darkgreen;
     height: 5rem;
     width: 5rem;
 }
