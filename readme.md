@@ -9,6 +9,9 @@
 
 #33ff33 - Buttons (add white text)
 
+## Next steps
+Put padding on colour picker so click area is increased
+
 
 
 

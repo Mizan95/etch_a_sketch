@@ -16,6 +16,7 @@ function generateGrid(number) {
         div.classList.add("box");
         div.style.height = `${grid.clientHeight / number}px`;
         div.style.width = `${grid.clientWidth / number}px`;
+        div.style.backgroundColor = 'white';
         grid.appendChild(div);
     }
   boxes = document.querySelectorAll(".box");
