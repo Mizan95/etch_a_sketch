@@ -45,6 +45,7 @@ let colour = "#4378EA";
 
 colourPicker.addEventListener('change', (e) => {
   colour = e.target.value;
+  shadeBoxes(colour);
 })
 
 // Shade squares with chosen colour or default colour on mouseover
