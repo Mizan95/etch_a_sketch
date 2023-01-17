@@ -11,27 +11,65 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+<style>
+footer > div {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+  a:link {
+    color: #cbf3f0;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:visited {
+  color: #1768d1;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #25528b;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+</style>
+
+
 <body>
   <header>
-    <div class="title-container">Drawing Pad! Have Fun!</div>
+    <div class="title-container">Cool Drawing Canvas</div>
   </header>
   <section>
-    <div class="buttonContainer">
+    <div class="leftButtonContainer">
       <button id="clearButton">clear</button>
-      <div class="colorPickerWrapper">
-        <input type="color" id="colourPicker" name="COLOUR" value="#4378EA">
-        <label for="colourPicker" id="colourPickerLabel">COLOUR</label>
+      <div class="frame">
+        <div class="slideContainer range">
+          <input type="range" min="2" max="22" value="10" orient="vertical" class="slider" id="slider">
+        </div>
       </div>
       <button id="applyButton">apply</button>
     </div>
     <div class="gridContainer">
-      <div class="slideContainer">
-        <input type="range" min="2" max="22" value="10" class="slider" id="slider">
-      </div>
       <div id="grid"></div>
     </div>
+    <div class="eraserPenContainer">
+      <button id="eraserButton">eraser</button>
+      <div class="colorPickerWrapper">
+        <div>
+          <input type="color" id="colourPicker" name="COLOUR" value="#4378EA">
+          <label for="colourPicker" id="colourPickerLabel">COLOUR</label>
+        </div>
+      </div>
+      <button id="penButton">pen</button>
+    </div>
   </section>
-  <footer></footer>
+  <footer>
+    <div>Created by <a href="https://github.com/Mizan95" target="_blank">Mizan</a></div>
+  </footer>
 
   
 </body>

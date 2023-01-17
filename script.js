@@ -1,11 +1,14 @@
 
 // Select grid and buttons
 const grid = document.querySelector('#grid');
-const slider = document.querySelector('#slider');
 
 const applyButton = document.querySelector('#applyButton');
+const slider = document.querySelector('#slider');
 const clearButton = document.querySelector('#clearButton');
+
+const eraser = document.querySelector('#eraserButton');
 const colourPicker = document.querySelector("#colourPicker");
+const pen = document.querySelector('#penButton');
 
 let boxes;
 
@@ -21,6 +24,7 @@ function generateGrid(number) {
     }
   boxes = document.querySelectorAll(".box");
 }
+
 
 // Remove all squares from grid
 function clearGrid(parent) {
@@ -43,21 +47,31 @@ colourPicker.addEventListener('change', (e) => {
   colour = e.target.value;
 })
 
-// Shade squares with chosen colour or default colour
+// Shade squares with chosen colour or default colour on mouseover
 function shadeBoxes() {
   boxes.forEach(box => {
-    box.addEventListener("mouseenter", () => {
+    box.addEventListener('mouseenter', () => {
       box.style.backgroundColor = `${colour}`;
-    });
-  });
+    })
+  })
 }
 
-// Remove colour from boxes
-function unshadeBoxes() {
+// Remove colour from all boxes
+function unshadeAllBoxes() {
   boxes.forEach(box => {
     box.style.backgroundColor = '#FFFFFF';
   })
 }
+
+// Unshade color from single box on mouseover
+function unShadeBox() {
+  boxes.forEach( box => {
+    box.addEventListener('mouseenter', () => {
+    box.style.backgroundColor = '#FFFFFF';
+    })
+  })
+}
+
 
 // Add functions to buttons
 applyButton.addEventListener('click', () => {
@@ -66,12 +80,23 @@ applyButton.addEventListener('click', () => {
     shadeBoxes()
 });
 
-clearButton.addEventListener('click', () => {
-    unshadeBoxes();
-})
+clearButton.addEventListener('click', unshadeAllBoxes)
+
+eraser.addEventListener('click', unShadeBox);
+
+pen.addEventListener('click', shadeBoxes);
 
 generateGrid(10);
 shadeBoxes();
+
+
+
+
+
+
+
+
+
 
 
 
