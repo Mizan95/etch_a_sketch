@@ -137,8 +137,6 @@ button:hover {
 .gridContainer {
     display: flex;
     margin: 0.5rem 0;
-    border: solid #3f51b5 10px;
-    border-radius: 10px;
 }
 
 #grid {
@@ -146,6 +144,8 @@ button:hover {
     height: 32rem;
     display: flex;
     flex-wrap: wrap;
+    border: solid #3f51b5 10px;
+    border-radius: 10px;
 }
 
 .box {
