@@ -6,9 +6,10 @@ const applyButton = document.querySelector('#applyButton');
 const slider = document.querySelector('#slider');
 const clearButton = document.querySelector('#clearButton');
 
+const pen = document.querySelector('#penButton');
 const eraser = document.querySelector('#eraserButton');
 const colourPicker = document.querySelector("#colourPicker");
-const pen = document.querySelector('#penButton');
+
 
 let boxes;
 
@@ -48,6 +49,9 @@ let colour = "#4378EA";
 colourPicker.addEventListener('change', (e) => {
   colour = e.target.value;
   shadeBoxes(colour);
+  pen.style.backgroundColor = 'blue';
+  eraser.style.backgroundColor = '';
+  
 })
 
 // Shade squares with chosen colour or default colour on mouseover
@@ -85,12 +89,21 @@ applyButton.addEventListener('click', () => {
 
 clearButton.addEventListener('click', unshadeAllBoxes)
 
-eraser.addEventListener('click', unShadeBox);
+eraser.addEventListener('click', () => {
+  unShadeBox();
+  eraser.style.backgroundColor = 'blue';
+  pen.style.backgroundColor = '';
+} );
 
-pen.addEventListener('click', shadeBoxes);
+pen.addEventListener('click', () => {
+  shadeBoxes();
+  pen.style.backgroundColor = 'blue';
+  eraser.style.backgroundColor = '';
+} );
 
 generateGrid(10);
 shadeBoxes();
+
 
 
 
