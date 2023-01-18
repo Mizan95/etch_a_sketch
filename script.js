@@ -14,13 +14,15 @@ let boxes;
 
 // Generate grid of squares on screen
 function generateGrid(number) {
-    for (let i = 1; i <= number ** 2; i++) {
+    for (let i = 1; i <= number; i++) {
+      for (let j = 1; j <= number; j++) {
         const div = document.createElement('div');
         div.classList.add("box");
         div.style.height = `${grid.clientHeight / number}px`;
         div.style.width = `${grid.clientWidth / number}px`;
         div.style.backgroundColor = 'white';
         grid.appendChild(div);
+      }
     }
   boxes = document.querySelectorAll(".box");
 }

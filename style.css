@@ -1,6 +1,14 @@
 body {
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+    width: 100%;
+}
+
+body > * {
+    flex: 1 1 auto;
 }
 
 /* Header */
@@ -129,12 +137,13 @@ button:hover {
 .gridContainer {
     display: flex;
     margin: 0.5rem 0;
+    border: solid #3f51b5 10px;
+    border-radius: 10px;
 }
 
 #grid {
     width: 32rem;
     height: 32rem;
-    border: solid #3f51b5 1px;
     display: flex;
     flex-wrap: wrap;
 }
